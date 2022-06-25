@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+
+:root {
+
+    --blanco: #FFFFFF;
+    --azulClaro: #2A7AE4;
+    --gris: #A2A2A2;
+    --grisOscuro: #464646;
+}
+
+
+
+
+html {
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 62.5%;
+
+}
+
+
+
+
+body {
+
+    font-size: 1.6rem;
+
+}
