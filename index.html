@@ -6,15 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/base/base.css" />
+    <link rel="stylesheet" href="assets/css/pages/index.css" />
     <title>Document</title>
   </head>
   <body>
+    <div class="contenedor">
+      <header>
+        <nav class="header__navegacion">
+          <ul class="navegacion__elementos">
+            <li class="header__icono">
+              <img src="assets/img/vectorControl.svg" alt="" />
+              <h3>AluraGeek</h3>
+            </li>
+            <li><a class="navegacion__boton" href="">Login</a></li>
+            <li><img src="assets/img/vectorLupa.svg" alt="" /></li>
+          </ul>
+        </nav>
 
-    <p>fjwefjowefwe</p>
+        <section class="header__banner">
+          <div class="banner__contenido">
+            <h2>Febrero Promocional</h2>
+            <p>Productos seleccionados con 33% de descuento</p>
+            <a href="">Ver consolas</a>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="seccionHeader">
+          <div>
+            <h2>Start Wars</h2>
+            <div>
+              <p class="seccionHeader__verTodo">Ver todo</p>
+              <img src="assets/img/felchaDerecha.svg" alt="" />
+            </div>
+          </div>
+
+          <section class="seccion__productos startWars"></section>
+        </section>
+
+        <section class="seccionHeader">
+          <div>
+            <h2>Consolas</h2>
+            <div>
+              <p class="seccionHeader__verTodo">Ver todo</p>
+              <img src="assets/img/felchaDerecha.svg" alt="" />
+            </div>
+          </div>
+
+          <section class="seccion__productos consolas"></section>
+        </section>
+
+        <section class="seccionHeader">
+          <div>
+            <h2>Diversos</h2>
+            <div>
+              <p class="seccionHeader__verTodo">Ver todo</p>
+              <img src="assets/img/felchaDerecha.svg" alt="" />
+            </div>
+          </div>
+
+          <section class="seccion__productos diversos"></section>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer_opciones">
+          <li class="header__icono centrarIcono">
+            <img src="assets/img/vectorControl.svg" alt="" />
+            <h3>AluraGeek</h3>
+          </li>
+
+          <p>Quienes somos</p>
+          <p>Politica de privacidad</p>
+          <p>Programa de fidelidad</p>
+          <p>Nuestras tiendas</p>
+          <p>Quiero ser franquiciado</p>
+          <p>Anúncie aquí</p>
+        </div>
+
+        <section class="footer__formulario">
+          <form action="">
+            <h3 class="formulario__titulo">Hable con nosotros</h3>
+            <div class="layoutInput">
+              <div>
+                <label for="">Nombre</label>
+                <input type="text">
+              </div>
+              <textarea placeholder="Escribe tu mensaje" name="" id="" rows="6"></textarea>
+               
+              <input class="boton__formulario" type="submit" value="Enviar Mensaje">
+            </div>
+
+          </form>
+
+          <p>Desarrollado por Andrew Buitrago 2022</p>
+        </section>
+      </footer>
+    </div>
   </body>
+  <script type="module" src="controller/productosController.js"></script>
 </html>

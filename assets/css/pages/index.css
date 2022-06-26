@@ -1,0 +1,308 @@
+body {
+    margin: 0px;
+}
+
+
+/* ESTILOS PARA LA NAVEGACION  */
+
+.header__icono {
+    display: flex;
+}
+
+
+.header__navegacion {
+    width: 90%;
+
+    margin: 0 auto;
+
+}
+
+.navegacion__boton {
+    color: var(--azulClaro);
+    font-weight: 600;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    border: 1px solid var(--azulClaro);
+    text-decoration: none;
+}
+
+
+.navegacion__elementos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-left: 0px;
+}
+
+
+/* ESTILOS PARA EL  BANNER     */
+
+
+.header__banner {
+    width: 100%;
+    height: 22rem;
+    background-image: url(../../img/banner.jpg);
+    background-position: center;
+    color: var(--blanco);
+    margin: 0 auto;
+    ;
+
+}
+
+.banner__contenido {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-bottom: 1rem;
+
+}
+
+.header__banner h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.header__banner p {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+.header__banner a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+    background: var(--azulClaro);
+    padding: 1.4rem;
+    width: 40%;
+    text-align: center;
+}
+
+
+
+/* ESTULOS PARA LA SECCION   */
+
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.seccionHeader h2 {
+    color: var(--grisOscuro);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+}
+
+.seccionHeader div {
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+
+.seccionHeader div div img {
+
+    width: 1.5rem;
+}
+
+.seccionHeader__verTodo {
+    color: var(--azulClaro);
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-right: .5rem;
+    align-self: center;
+
+}
+
+
+
+/* SECCION DE PRODUCTOS  */
+
+.seccion__productos {
+
+    width: 95%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+   gap:5%;
+    margin: 0px !important;
+
+
+
+}
+
+.seccion__productos div img {
+
+    width: 100%;
+    height: 13rem;
+
+}
+
+
+.seccion__productos div {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.producto__titulo {
+
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--grisOscuro);
+    margin: .3rem;
+    text-align: left;
+
+
+}
+
+.producto__precio {
+
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: .3rem;
+
+
+}
+
+
+.producto__ver {
+
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--azulClaro);
+    margin: .3rem;
+
+}
+
+
+.seccion__productos div:nth-child(5) {
+    display: none;
+
+}
+
+.seccion__productos div:nth-child(6) {
+    display: none;
+
+}
+
+
+/* ESTILOS PARA EL FOOTER */
+
+
+
+
+.footer_opciones {
+
+    margin-top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer_opciones p {
+
+    margin: 1rem;
+
+}
+
+
+.footer__formulario {
+
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+
+
+
+
+.formulario__titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--grisOscuro);
+    margin-bottom: 5rem;
+}
+
+
+.layoutInput div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+}
+
+.layoutInput textarea {
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    border-bottom: 1px solid #C8C8C8;
+    outline: none;
+
+}
+
+
+
+.layoutInput div label {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #A2A2A2;
+
+}
+
+.layoutInput div input {
+   
+    border: none;
+    border-bottom: 1px solid #C8C8C8;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:var(--grisOscuro);
+    outline: none;
+
+}
+
+.boton__formulario{
+    margin-top: 4rem;
+    background-color: var(--azulClaro);
+    font-weight: 600;
+    font-size: 1.4rem;
+    color:var(--blanco);
+    border: none;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    padding-left:  6rem;
+    padding-right: 6rem;
+}
+
+
+
+.footer__formulario p {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+
+}
