@@ -1,0 +1,75 @@
+
+
+
+/* ESTILOS PARA EL HEADER */
+
+
+
+.header__icono h3{
+
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+
+
+
+/* ESTILOS PARA EL FORMULARIO DE LOGN */
+
+.layoutInput div:nth-child(1){
+    
+    margin-bottom: 5rem;
+
+
+}
+
+.formularioLogin{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+   
+}
+
+.formularioLogin h2{
+   text-align: center;
+   margin-bottom: 5rem;
+}
+
+
+
+.botonWidth{
+    width: 100%;
+}
+
+
+
+
+
+/* RESPONSIVE PARA  TABLET  */
+
+
+@media (min-width:765px){
+
+    .formularioLogin{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 5rem;
+       
+    }
+    
+    
+}
+
+/* RESPONSIVE PARA  PC  */
+
+@media (min-width:1025px){
+
+    .formularioLogin{
+        width: 45%;
+        margin: 0 auto;
+        margin-top: 5rem;
+       
+    }
+    
+    
+}
