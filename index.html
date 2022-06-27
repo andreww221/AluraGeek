@@ -20,9 +20,11 @@
       <header>
         <nav class="header__navegacion">
           <ul class="navegacion__elementos">
-            <li class="header__icono">
-              <img src="assets/img/vectorControl.svg" alt="" />
-              <h3>AluraGeek</h3>
+            <li >
+              <a class="header__icono" href="">
+                <img src="assets/img/vectorControl.svg" alt="" />
+                 <h3>AluraGeek</h3>
+              </a>
             </li>
             <li>
               <a class="navegacion__boton original" href="view/login.html">Login</a>
@@ -32,7 +34,7 @@
             
             </li>
             <li>
-              <a class="navegacion__boton iconoTablet"  href="">Login</a>
+              <a class="navegacion__boton iconoTablet"  href="view/login.html" >Login</a>
             <img class="iconoBuscar original" src="assets/img/vectorLupa.svg" alt="" />
            </li>
           </ul>
@@ -42,7 +44,7 @@
           <div class="banner__contenido">
             <h2>Febrero Promocional</h2>
             <p>Productos seleccionados con 33% de descuento</p>
-            <a href="">Ver consolas</a>
+            <a href="#c">Ver consolas</a>
           </div>
         </section>
       </header>
@@ -52,7 +54,7 @@
           <div>
             <h2>Start Wars</h2>
             <div>
-              <p class="seccionHeader__verTodo">Ver todo</p>
+              <a href="view/todosProductos.html" class="seccionHeader__verTodo">Ver todo</a>
               <img src="assets/img/felchaDerecha.svg" alt="" />
             </div>
           </div>
@@ -60,11 +62,11 @@
           <section class="seccion__productos startWars"></section>
         </section>
 
-        <section class="seccionHeader">
+        <section name="c" id="c" class="seccionHeader">
           <div>
             <h2>Consolas</h2>
             <div>
-              <p class="seccionHeader__verTodo">Ver todo</p>
+              <a href="view/todosProductos.html" class="seccionHeader__verTodo">Ver todo</a>
               <img src="assets/img/felchaDerecha.svg" alt="" />
             </div>
           </div>
@@ -76,7 +78,7 @@
           <div>
             <h2>Diversos</h2>
             <div>
-              <p class="seccionHeader__verTodo">Ver todo</p>
+              <a href="view/todosProductos.html" class="seccionHeader__verTodo">Ver todo</a>
               <img src="assets/img/felchaDerecha.svg" alt="" />
             </div>
           </div>
@@ -120,5 +122,5 @@
       </footer>
     </div>
   </body>
-  <script type="module" src="controller/productosController.js"></script>
+  <script type="module"  src="controller/productosController.js"></script>
 </html>

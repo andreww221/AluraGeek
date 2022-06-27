@@ -6,12 +6,11 @@
 
 
 .header__icono h3{
-
     font-size: 2rem;
     margin-left: 1rem;
+    color: black;
+    
 }
-
-
 
 
 /* ESTILOS PARA EL FORMULARIO DE LOGN */
@@ -48,7 +47,7 @@
 /* RESPONSIVE PARA  TABLET  */
 
 
-@media (min-width:765px){
+@media (min-width:768px){
 
     .formularioLogin{
         width: 70%;
@@ -56,6 +55,13 @@
         margin-top: 5rem;
        
     }
+
+    
+.header__icono h3{
+    font-size: 2.5rem;
+ 
+    
+}
     
     
 }

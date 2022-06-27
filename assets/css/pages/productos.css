@@ -1,0 +1,121 @@
+
+
+
+/* ESTILOS PARA EL HEADER  */
+
+.header__icono h3{
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: black;
+    
+}
+
+
+
+/* ESTILOS PARA LA SECCION PRINCIPAL */
+
+.main__titulo{
+    margin-bottom: 6rem;
+    margin-top: 5rem;
+}
+
+
+.seccion__productos{
+
+    width: 90%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0px !important;
+    margin: 0 auto;
+    column-gap: 10%;
+
+}
+
+.seccion__productos div:nth-child(5) {
+    display: flex;
+
+}
+
+.seccion__productos div:nth-child(6) {
+    display: flex;
+
+}
+
+
+main{
+    margin-bottom: 75rem;
+}
+
+
+
+
+/* RESPONSIVE PARA TABLET */
+
+
+
+@media(min-width:768px){
+
+    .seccion__productos{
+
+        width: 90%;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        margin: 0px !important;
+        margin: 0 auto;
+        column-gap: 10%;
+
+    
+    
+    }
+
+    main{
+        width: 80%;
+    }
+
+    main{
+        margin-bottom: 4rem;
+    }
+
+    .header__icono h3{
+        font-size: 2.5rem;
+    
+    }
+    
+    
+    
+
+}
+
+/* RESPONSIVE PARA PC */
+
+
+
+@media(min-width:1025px){
+
+    .seccion__productos{
+
+        
+        grid-template-columns: 16% 16% 16% 16% 16% 16%;
+        column-gap: 2.5%;
+    
+    }
+
+    main{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    main{
+        margin-bottom: 4rem;
+    }
+
+    .header__icono h3{
+        font-size: 2.7rem;
+    
+    }
+    
+    
+    
+    
+
+}

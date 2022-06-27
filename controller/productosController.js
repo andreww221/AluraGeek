@@ -4,7 +4,7 @@ import modelProductos from "../model/modelProductos.js";
 
 
 
-function CrearElementosStartWars(){
+function crearElementosPorSeccion(){
 
 const contenedorStartWars = document.querySelector(".startWars");
 const contenedorConsolas = document.querySelector(".consolas");
@@ -33,7 +33,39 @@ modelo.listaProductos()
 }
 
 
-CrearElementosStartWars();
+function crearTodosLosElementosJuntos(){
+
+    const contenedor = document.querySelector(".todosproductos");
+
+    
+    const modelo = new modelProductos();
+    
+    modelo.listaProductos()
+    
+    .then((datos)=>{
+        for (let i = 0; i < datos.length; i++) {
+            
+           if(datos[i].category=="startWars"){
+            crearProductoHTML(datos[i].image,datos[i].title,datos[i].price,contenedor);
+           }else if(datos[i].category=="consolas"){
+            crearProductoHTML(datos[i].image,datos[i].title,datos[i].price,contenedor);
+           }else if(datos[i].category=="divsersos"){
+            crearProductoHTML(datos[i].image,datos[i].title,datos[i].price,contenedor);
+           }
+    
+    
+        }
+    });
+    
+    
+    }
+
+
+
+
+
+    crearElementosPorSeccion();
+    crearTodosLosElementosJuntos();
 
  
 
