@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/base/base.css" />
+    <link rel="stylesheet" href="../assets/css/pages/index.css" />
+    <link rel="stylesheet" href="../assets/css/pages/login.css" />
+    <link rel="stylesheet" href="../assets/css/pages/registrarProducto.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <header>
+        <nav class="header__navegacion">
+          <ul class="navegacion__elementos">
+            <li>
+             <a  class="header__icono" href="../index.html">
+              <img src="../assets/img/vectorControl.svg" alt="" />
+              <h3>AluraGeek</h3>
+             </a>
+            </li>
+           
+          </ul>
+        </nav>
+
+   
+      </header>
+
+      <main>
+        <form class="formularioLogin" action="" >
+            <h2>Agregar un nuevo producto</h2>
+
+            <div class="layoutInput">
+                <div>
+                  <label for="">URL de la imagen</label>
+                  <input type="text" required data-inputUrl >
+                </div>
+                <div>
+                    <label for="">Categoria</label>
+                    <select name="" id="" required data-inputCategoria>
+                        <option disabled selected value="">--Seleccione--</option>
+                        <option value="startWars">StartWars</option>
+                        <option value="consolas">Consolas</option>
+                        <option value="diversos">Diversos</option>
+                    </select>
+                     
+                  </div>
+                  <div>
+                    <label for="">Nombre del producto</label>
+                    <input type="text" required data-inputNombre>
+                  </div>
+                  <div>
+                    <label for="">Precio del producto</label>
+                    <input type="number" required data-inputPrecio>
+                  </div>
+                  <div>
+                    <label for="">Descripcion del producto</label>
+                    <input type="text" required data-Descripcion>
+                  </div>
+
+
+                </div>  
+            
+                <input  class="boton__formulario botonWidth botonRegistrarProducto" type="submit" value="Registrar Producto" data-botonRegistrar>
+                
+           
+        </form>
+      </main>
+
+     
+
+
+   
+    </div>
+  </body>
+<script type="module" src="../controller/productosController.js"></script>
+
+<!-- <script src="../prueba.js"></script> -->
+</html>

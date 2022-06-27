@@ -49,3 +49,10 @@
 }
 
 
+@media (max-width:765px) {
+    main{
+        margin-bottom: 90rem;
+    }
+    
+    
+}

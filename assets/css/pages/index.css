@@ -351,6 +351,17 @@ main {
 
 }
 
+.layoutInput div select {
+
+    border: none;
+    border-bottom: 1px solid #C8C8C8;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--grisOscuro);
+    outline: none;
+
+}
+
 .boton__formulario {
     margin-top: 4rem;
     background-color: var(--azulClaro);

@@ -14,25 +14,25 @@ function crearElementosPorSeccion() {
 
     .then((datos) => {
       for (let i = 0; i < datos.length; i++) {
-        if (datos[i].category == "startWars") {
+        if (datos[i].categoria == "startWars") {
           crearProductoHTML(
-            datos[i].image,
-            datos[i].title,
-            datos[i].price,
+            datos[i].imagen,
+            datos[i].nombre,
+            datos[i].precio,
             contenedorStartWars
           );
-        } else if (datos[i].category == "consolas") {
+        } else if (datos[i].categoria == "consolas") {
           crearProductoHTML(
-            datos[i].image,
-            datos[i].title,
-            datos[i].price,
+            datos[i].imagen,
+            datos[i].nombre,
+            datos[i].precio,
             contenedorConsolas
           );
-        } else if (datos[i].category == "divsersos") {
+        } else if (datos[i].categoria == "diversos") {
           crearProductoHTML(
-            datos[i].image,
-            datos[i].title,
-            datos[i].price,
+            datos[i].imagen,
+            datos[i].nombre,
+            datos[i].precio,
             contenedorDiversos
           );
         }
@@ -50,25 +50,25 @@ function crearTodosLosElementosJuntos() {
 
     .then((datos) => {
       for (let i = 0; i < datos.length; i++) {
-        if (datos[i].category == "startWars") {
+        if (datos[i].categoria == "startWars") {
           crearProductoHTML(
-            datos[i].image,
-            datos[i].title,
-            datos[i].price,
+            datos[i].imagen,
+            datos[i].nombre,
+            datos[i].precio,
             contenedor
           );
-        } else if (datos[i].category == "consolas") {
+        } else if (datos[i].categoria == "consolas") {
           crearProductoHTML(
-            datos[i].image,
-            datos[i].title,
-            datos[i].price,
+            datos[i].imagen,
+            datos[i].nombre,
+            datos[i].precio,
             contenedor
           );
-        } else if (datos[i].category == "divsersos") {
+        } else if (datos[i].categoria == "diversos") {
           crearProductoHTML(
-            datos[i].image,
-            datos[i].title,
-            datos[i].price,
+            datos[i].imagen,
+            datos[i].nombre,
+            datos[i].precio,
             contenedor
           );
         }
@@ -87,9 +87,9 @@ function crearElementosAdmin() {
     .then((datos) => {
       for (let i = 0; i < datos.length; i++) {
         crearProductosHTMLADMIN2(
-            datos[i].image,
-            datos[i].title,
-            datos[i].price,
+            datos[i].imagen,
+            datos[i].nombre,
+            datos[i].precio,
             contenedor
           );
     
@@ -101,3 +101,50 @@ function crearElementosAdmin() {
 crearElementosAdmin();
 crearElementosPorSeccion();
 crearTodosLosElementosJuntos();
+
+
+
+
+let boton = document.querySelector(".formularioLogin");
+
+boton.addEventListener("submit",(e)=>{
+
+  console.log(document.querySelector("[data-inputCategoria]").value);
+
+e.preventDefault();
+
+    fetch("https://62b7d76df4cb8d63df55a1cc.mockapi.io/geek/Productos", {
+        method: "POST",
+    
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          imagen: document.querySelector("[data-inputUrl]").value,
+          nombre: document.querySelector("[data-inputNombre]").value,
+          precio: document.querySelector("[data-inputPrecio]").value,
+          descripcion: document.querySelector("[data-Descripcion]").value,
+          categoria: document.querySelector("[data-inputCategoria]").value,
+        }),
+      })
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
