@@ -15,6 +15,11 @@
 
 /* ESTILOS PARA EL FORMULARIO DE LOGN */
 
+
+.layoutInput{
+    margin-bottom: 5rem;
+}
+
 .layoutInput div:nth-child(1){
     
     margin-bottom: 5rem;
@@ -29,6 +34,9 @@
    
 }
 
+
+
+
 .formularioLogin h2{
    text-align: center;
    margin-bottom: 5rem;
@@ -36,10 +44,14 @@
 
 
 
-.botonWidth{
-    width: 100%;
-}
+.formularioLogin a{
 
+    
+    text-decoration: none;
+    display: block;
+    text-align: center;
+   
+}
 
 
 

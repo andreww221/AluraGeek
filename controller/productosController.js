@@ -1,85 +1,103 @@
-
 import crearProductoHTML from "../js/crearProductoHTML.js";
 import modelProductos from "../model/modelProductos.js";
+import crearProductosHTMLADMIN2 from "../js/crearProductosADMIN.js";
 
+function crearElementosPorSeccion() {
+  const contenedorStartWars = document.querySelector(".startWars");
+  const contenedorConsolas = document.querySelector(".consolas");
+  const contenedorDiversos = document.querySelector(".diversos");
 
+  const modelo = new modelProductos();
 
-function crearElementosPorSeccion(){
+  modelo
+    .listaProductos()
 
-const contenedorStartWars = document.querySelector(".startWars");
-const contenedorConsolas = document.querySelector(".consolas");
-const contenedorDiversos = document.querySelector(".diversos");
+    .then((datos) => {
+      for (let i = 0; i < datos.length; i++) {
+        if (datos[i].category == "startWars") {
+          crearProductoHTML(
+            datos[i].image,
+            datos[i].title,
+            datos[i].price,
+            contenedorStartWars
+          );
+        } else if (datos[i].category == "consolas") {
+          crearProductoHTML(
+            datos[i].image,
+            datos[i].title,
+            datos[i].price,
+            contenedorConsolas
+          );
+        } else if (datos[i].category == "divsersos") {
+          crearProductoHTML(
+            datos[i].image,
+            datos[i].title,
+            datos[i].price,
+            contenedorDiversos
+          );
+        }
+      }
+    });
+}
 
-const modelo = new modelProductos();
+function crearTodosLosElementosJuntos() {
+  const contenedor = document.querySelector(".todosproductos");
 
-modelo.listaProductos()
+  const modelo = new modelProductos();
 
-.then((datos)=>{
-    for (let i = 0; i < datos.length; i++) {
-        
-       if(datos[i].category=="startWars"){
-        crearProductoHTML(datos[i].image,datos[i].title,datos[i].price,contenedorStartWars);
-       }else if(datos[i].category=="consolas"){
-        crearProductoHTML(datos[i].image,datos[i].title,datos[i].price,contenedorConsolas);
-       }else if(datos[i].category=="divsersos"){
-        crearProductoHTML(datos[i].image,datos[i].title,datos[i].price,contenedorDiversos);
-       }
+  modelo
+    .listaProductos()
 
+    .then((datos) => {
+      for (let i = 0; i < datos.length; i++) {
+        if (datos[i].category == "startWars") {
+          crearProductoHTML(
+            datos[i].image,
+            datos[i].title,
+            datos[i].price,
+            contenedor
+          );
+        } else if (datos[i].category == "consolas") {
+          crearProductoHTML(
+            datos[i].image,
+            datos[i].title,
+            datos[i].price,
+            contenedor
+          );
+        } else if (datos[i].category == "divsersos") {
+          crearProductoHTML(
+            datos[i].image,
+            datos[i].title,
+            datos[i].price,
+            contenedor
+          );
+        }
+      }
+    });
+}
 
-    }
-});
+function crearElementosAdmin() {
+  const contenedor = document.querySelector(".productosAdmin");
 
+  const modelo = new modelProductos();
 
+  modelo
+    .listaProductos()
+
+    .then((datos) => {
+      for (let i = 0; i < datos.length; i++) {
+        crearProductosHTMLADMIN2(
+            datos[i].image,
+            datos[i].title,
+            datos[i].price,
+            contenedor
+          );
+    
+      }
+    });
 }
 
 
-function crearTodosLosElementosJuntos(){
-
-    const contenedor = document.querySelector(".todosproductos");
-
-    
-    const modelo = new modelProductos();
-    
-    modelo.listaProductos()
-    
-    .then((datos)=>{
-        for (let i = 0; i < datos.length; i++) {
-            
-           if(datos[i].category=="startWars"){
-            crearProductoHTML(datos[i].image,datos[i].title,datos[i].price,contenedor);
-           }else if(datos[i].category=="consolas"){
-            crearProductoHTML(datos[i].image,datos[i].title,datos[i].price,contenedor);
-           }else if(datos[i].category=="divsersos"){
-            crearProductoHTML(datos[i].image,datos[i].title,datos[i].price,contenedor);
-           }
-    
-    
-        }
-    });
-    
-    
-    }
-
-
-
-
-
-    crearElementosPorSeccion();
-    crearTodosLosElementosJuntos();
-
- 
-
-
-    
-
-    
-    
-    
-
-
-
-
-
-
-
-
+crearElementosAdmin();
+crearElementosPorSeccion();
+crearTodosLosElementosJuntos();

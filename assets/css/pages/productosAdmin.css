@@ -1,0 +1,51 @@
+
+.seccionHeader{
+    margin-top: 5rem;
+}
+
+
+.boton_agregarProducto{
+    background-color: var(--azulClaro);
+    text-decoration: none;
+    color:var(--blanco);
+    padding: 1.5rem;
+
+}
+
+.boton_agregarProducto:hover{
+    background-color: black;
+    transition: background-color 1.5s ;
+   
+
+}
+
+
+
+
+
+/* ESTILOS PARA LOS BOTONES DE ELIMINAR Y ACTUALIZAR */
+
+.layoutIconos{
+   
+    display: flex !important;
+    flex-direction: row !important;
+    margin-bottom: 1.5rem;
+    justify-content: start !important;
+    gap:2rem;
+}
+
+.layoutIconos a{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline;
+}
+
+
+.layoutIconos a:hover{
+
+   transform: rotate(350deg);
+   transition: transform 2s;
+  
+}
+
+
