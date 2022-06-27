@@ -7,7 +7,14 @@ body {
 
 .header__icono {
     display: flex;
+   
 }
+
+
+.iconoTablet{
+    display: none;
+}
+
 
 
 .header__navegacion {
@@ -40,17 +47,21 @@ body {
 
 
 
-.campoBuscar{
+.inputBuscar {
 
     font-size: 1.6rem;
     border: none;
     color: #A2A2A2;
     outline: none;
     align-self: center;
-    width: 165px;
-    display: none;
+    width: 200px;
+
+    
 
 }
+
+
+
 
 
 /* ESTILOS PARA EL  BANNER     */
@@ -59,7 +70,7 @@ body {
 .header__banner {
     width: 100%;
     height: 25rem;
-    background-image: url(../../img/banner.jpg);
+    background-image: url(../../img/banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,6 +79,8 @@ body {
     ;
 
 }
+
+
 
 .banner__contenido {
     width: 90%;
@@ -121,7 +134,7 @@ main {
     font-weight: 700;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    
+
 }
 
 .seccionHeader div {
@@ -156,7 +169,7 @@ main {
     width: 95%;
     display: grid;
     grid-template-columns: 50% 50%;
-    gap:5%;
+    gap: 5%;
     margin: 0px !important;
 
 
@@ -291,26 +304,26 @@ main {
 }
 
 .layoutInput div input {
-   
+
     border: none;
     border-bottom: 1px solid #C8C8C8;
     font-size: 1.6rem;
     font-weight: 400;
-    color:var(--grisOscuro);
+    color: var(--grisOscuro);
     outline: none;
 
 }
 
-.boton__formulario{
+.boton__formulario {
     margin-top: 4rem;
     background-color: var(--azulClaro);
     font-weight: 600;
     font-size: 1.4rem;
-    color:var(--blanco);
+    color: var(--blanco);
     border: none;
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
-    padding-left:  6rem;
+    padding-left: 6rem;
     padding-right: 6rem;
 }
 
@@ -330,11 +343,27 @@ main {
 /*  RESPONSIVE PARA TABLET  */
 
 
-@media (min-width:768px){
+@media (min-width:768px) {
 
+    .original{
+        display: none;
+    }
+
+    .iconoTablet{
+        display: inline;
+    }
+
+    .header__icono h3{
+     margin-left: 1rem;
+     font-size: 2.5rem;
+    }
+    
+
+
+    
     .header__banner {
         height: 30rem;
-      
+
     }
 
     .seccion__productos {
@@ -342,24 +371,25 @@ main {
         width: 95%;
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
-        gap:1%;
+        gap: 1%;
         margin: 0px !important;
-    
-    
-    
+
+
+
     }
+
     .header__banner h2 {
         font-size: 5.2rem;
         font-weight: 700;
         margin: 0px;
     }
-    
+
     .header__banner p {
         font-size: 2.2rem;
         font-weight: 600;
     }
-    
-    
+
+
     .header__banner a {
         font-size: 1.4rem;
         font-weight: 600;
@@ -371,80 +401,135 @@ main {
         text-align: center;
     }
 
-    footer{
+    footer {
         display: grid;
         grid-template-columns: 50% 50%;
-       align-items: flex-start;
+        align-items: flex-start;
+
+    }
+
+
+
+
+    .formulario__titulo {
+
+        margin-top: 0rem;
+    }
+
+
+    .footer_opciones {
+
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+    }
+
+
+    .footer__formulario p {
+
+        text-align: left;
+
+
+    }
+
+
+
+    .navegacion__boton {
+        color: var(--azulClaro);
+        font-weight: 600;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-right: 9rem;
+        padding-left: 9rem;
+        border: 1px solid var(--azulClaro);
+        text-decoration: none;
+    }
+
+
+   
+
+  
+
+
+  
+
+
+}
+
+
+
+
+
+@media (min-width:1025px) {
+
+    .header__navegacion {
+        width: 150rem;
+        max-width: 120rem;
+
+
+
+    }
+
+
+    .header__banner {
+        height: 40rem;
+
+    }
+
+
+    main {
+        width: 150rem;
+        max-width: 120rem
+    }
+
+    footer{
+        width: 150rem;
+        max-width: 120rem;
+        margin:0 auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .banner__contenido {
+        width: 150rem;
+        max-width: 120rem
+        
     
+    }
+
+    .seccion__productos {
+
+        width: 95%;
+        display: grid;
+        grid-template-columns: 16% 16% 16% 16% 16% 16%;
+        gap: 1%;
+        margin: 0px !important;
+
+
+
+    }
+
+    .seccion__productos div:nth-child(5) {
+        display: inline;
+    
+    }
+    
+    .seccion__productos div:nth-child(6) {
+        display: inline;
+    
+    }
+
+    .header__banner a {
+     
+        width: 20%;
+  
     }
     
 
 
-    
-.formulario__titulo {
-   
-    margin-top: 0rem ;
-}
-
-
-.footer_opciones {
-    
-height: 80%;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
 
 
 }
-
-
-.footer__formulario p {
-  
-    text-align: left;
-   
-
-}
-
-
-
-.navegacion__boton {
-    color: var(--azulClaro);
-    font-weight: 600;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-right: 9rem;
-    padding-left: 9rem;
-    border: 1px solid var(--azulClaro);
-    text-decoration: none;
-}
-
-
-.iconoBuscar{
-
-    width: 14px;
-}
-
-.campoBuscar{
-
-   
-    display: inline;
-
-}
-    
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
