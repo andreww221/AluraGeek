@@ -18,6 +18,33 @@ class modelProductos {
       }),
     });
   }
+
+
+
+  eliminarProducto(id){
+
+
+    fetch("https://62b7d76df4cb8d63df55a1cc.mockapi.io/geek/Productos/"+id,{
+      method:"DELETE"
+    }).then(()=>{
+      window.location.href="todosProductosAdmin.html";
+    })
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
 }
 
 export default modelProductos;

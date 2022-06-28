@@ -18,3 +18,13 @@
 .botonWidth{
     width: 100%;
 }
+
+
+.botonRegistrarProducto{
+    cursor: pointer;
+}
+
+.botonRegistrarProducto:hover{
+   background-color: black;
+   transition: background-color 1.5s;
+}

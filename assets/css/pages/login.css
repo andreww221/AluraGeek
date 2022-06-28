@@ -53,7 +53,15 @@
    
 }
 
+.boton__formulario{
+    cursor: pointer;
+}
 
+.boton__formulario:hover{
+   background-color: black;
+    transition: background-color 1.5s;
+
+}
 
 
 /* RESPONSIVE PARA  TABLET  */

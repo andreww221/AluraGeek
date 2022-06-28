@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/base/base.css" />
+    <link rel="stylesheet" href="../assets/css/pages/index.css" />
+    <link rel="stylesheet" href="../assets/css/pages/login.css" />
+    <link rel="stylesheet" href="../assets/css/pages/eliminarProducto.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <main>
+        <div class="layout_icono">
+          <a class="header__icono" href="../index.html">
+            <img src="../assets/img/vectorControl.svg" alt="" />
+            <h3>AluraGeek</h3>
+          </a>
+        </div>
+
+        <div>
+          <h2 class="tituloEliminar">
+            ¿Estas seguro de eliminar este producto?
+          </h2>
+          <a
+            class="boton__formulario botonWidth botonSi"
+            type="submit"
+            value="Entrar"
+            id=""
+            >Si</a
+          >
+          <a
+            href="../view/todosProductosAdmin.html"
+            class="boton__formulario botonWidth"
+            type="submit"
+            value="Entrar"
+            >No</a
+          >
+        </div>
+      </main>
+    </div>
+  </body>
+
+  <script>
+
+    let botonEliminar = document.querySelector(".botonSi");
+    var queryString = window.location.search;
+    var urlParams = new URLSearchParams(queryString);
+    var anuncioParam = urlParams.get("id");
+
+    botonEliminar.id=anuncioParam;
+
+  </script>
+
+  <script type="module" src="../controller/productosController.js"></script>
+</html>
