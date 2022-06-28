@@ -11,32 +11,34 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="assets/css/base/normalize.css" />
+
     <link rel="stylesheet" href="assets/css/base/base.css" />
     <link rel="stylesheet" href="assets/css/pages/index.css" />
-    <title>Document</title>
+    <link rel="icon" href="../../assets/img/vectorControl.svg">
+    <title>Alura Geek</title>
   </head>
   <body>
     <div class="contenedor">
       <header>
         <nav class="header__navegacion">
           <ul class="navegacion__elementos">
-            <li >
-              <a class="header__icono" href="">
+            <li>
+              <a class="elementos__logo" href="">
                 <img src="assets/img/vectorControl.svg" alt="" />
-                 <h3>AluraGeek</h3>
+                <h3>AluraGeek</h3>
               </a>
             </li>
+        
             <li>
-              <a class="navegacion__boton original" href="view/usuario/login.html">Login</a>
-              <input placeholder="¿Que Deseas Buscar?" class="iconoTablet inputBuscar"  type="text">
-              <img class="iconoBuscar iconoTablet" src="assets/img/vectorLupa.svg" alt="" />
-     
-            
+              <a
+                class="navegacion__boton iconoTablet"
+                href="view/usuario/login.html"
+                >Login</a
+              >
+          
             </li>
-            <li>
-              <a class="navegacion__boton iconoTablet"  href="view/usuario/login.html" >Login</a>
-            <img class="iconoBuscar original" src="assets/img/vectorLupa.svg" alt="" />
-           </li>
           </ul>
         </nav>
 
@@ -50,11 +52,15 @@
       </header>
 
       <main>
-        <section class="seccionHeader">
+        <section class="tituloSeccion">
           <div>
             <h2>Start Wars</h2>
             <div>
-              <a href="view/productos/todosProductos.html" class="seccionHeader__verTodo">Ver todo</a>
+              <a
+                href="view/productos/todosProductos.html"
+                class="seccionHeader__verTodo"
+                >Ver todo</a
+              >
               <img src="assets/img/felchaDerecha.svg" alt="" />
             </div>
           </div>
@@ -62,11 +68,15 @@
           <section class="seccion__productos startWars"></section>
         </section>
 
-        <section name="c" id="c" class="seccionHeader">
+        <section name="c" id="c" class="tituloSeccion">
           <div>
             <h2>Consolas</h2>
             <div>
-              <a href="view/productos/todosProductos.html" class="seccionHeader__verTodo">Ver todo</a>
+              <a
+                href="view/productos/todosProductos.html"
+                class="seccionHeader__verTodo"
+                >Ver todo</a
+              >
               <img src="assets/img/felchaDerecha.svg" alt="" />
             </div>
           </div>
@@ -74,11 +84,15 @@
           <section class="seccion__productos consolas"></section>
         </section>
 
-        <section class="seccionHeader">
+        <section class="tituloSeccion">
           <div>
             <h2>Diversos</h2>
             <div>
-              <a href="view/productos/todosProductos.html" class="seccionHeader__verTodo">Ver todo</a>
+              <a
+                href="view/productos/todosProductos.html"
+                class="seccionHeader__verTodo"
+                >Ver todo</a
+              >
               <img src="assets/img/felchaDerecha.svg" alt="" />
             </div>
           </div>
@@ -103,18 +117,29 @@
         </div>
 
         <section class="footer__formulario">
-          <form action="">
+          <form class="formularioMensaje">
             <h3 class="formulario__titulo">Hable con nosotros</h3>
             <div class="layoutInput">
               <div>
                 <label for="">Nombre</label>
-                <input type="text">
+                <input type="text" class="inputNombreNosotros"  />
               </div>
-              <textarea placeholder="Escribe tu mensaje" name="" id="" rows="6"></textarea>
-               
-              <input class="boton__formulario" type="submit" value="Enviar Mensaje">
-            </div>
+              <textarea
+                placeholder="Escribe tu mensaje"
+                name=""
+                id=""
+                rows="6"
+                class="inputMensajeNosotros"
+            
+              ></textarea>
 
+              <input
+                class="boton__formulario"
+                type="submit"
+                value="Enviar Mensaje"
+          
+              />
+            </div>
           </form>
 
           <p>Desarrollado por Andrew Buitrago 2022</p>
@@ -122,7 +147,9 @@
       </footer>
     </div>
   </body>
- 
- <!-- <script src="prueba.js"></script> -->
-  <script   type="module" src="controller/productosController.js"></script>
+
+  <!-- <script src="prueba.js"></script> -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="controller/productosController.js"></script>
+  <script type="module" src="controller/hableNosotros.js"></script>
 </html>

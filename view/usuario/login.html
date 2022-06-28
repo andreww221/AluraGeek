@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="../../assets/css/base/base.css" />
     <link rel="stylesheet" href="../../assets/css/pages/index.css" />
     <link rel="stylesheet" href="../../assets/css/pages/login.css" />
-    <title>Document</title>
+    <link rel="icon" href="../../assets/img/vectorControl.svg">
+    <title>Alura Geek</title>
   </head>
   <body>
     <div class="contenedor">
@@ -22,7 +23,7 @@
         <nav class="header__navegacion">
           <ul class="navegacion__elementos">
             <li>
-             <a  class="header__icono" href="../../index.html">
+             <a  class="elementos__logo" href="../../index.html">
               <img src="../../assets/img/vectorControl.svg" alt="" />
               <h3>AluraGeek</h3>
              </a>
@@ -40,16 +41,16 @@
 
             <div class="layoutInput">
                 <div>
-                  <label for="">Escriba su correo electronico</label>
-                  <input type="email">
+                  <label for="">Escriba su usuario</label>
+                  <input type="text" required data-inputUsuario>
                 </div>
                 <div>
                     <label for="">Escriba su contraseña</label>
-                    <input type="password">
-                  </div>
+                    <input type="password" required data-inputPassword>
+                  </div> 
                 </div>  
                  
-                <a href="../productos/todosProductosAdmin.html" class="boton__formulario botonWidth" type="submit" value="Entrar">Entrar<a/>
+                <input style="width:100%"  class="boton__formulario botonWidth" type="submit" value="Entrar">
            
         </form>
       </main>
@@ -60,5 +61,7 @@
    
     </div>
   </body>
+
+  <script src="../../controller/usuarioController.js"></script>
 
 </html>

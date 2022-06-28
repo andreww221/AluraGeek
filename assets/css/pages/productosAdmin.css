@@ -1,14 +1,11 @@
 
-.seccionHeader{
-    margin-top: 5rem;
-}
-
 
 .boton_agregarProducto{
     background-color: var(--azulClaro);
     text-decoration: none;
     color:var(--blanco);
     padding: 1.5rem;
+    
 
 }
 
@@ -17,6 +14,15 @@
     transition: background-color 1.5s ;
    
 
+}
+
+.tituloProductosAdmin{
+
+    margin-bottom: 6rem;
+}
+
+.productosAdmin{
+    margin-top: 6rem;
 }
 
 
@@ -49,10 +55,3 @@
 }
 
 
-@media (max-width:765px) {
-    main{
-        margin-bottom: 90rem;
-    }
-    
-    
-}

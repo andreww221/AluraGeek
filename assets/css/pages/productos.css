@@ -1,121 +1,106 @@
 
 
 
-/* ESTILOS PARA EL HEADER  */
+.navegacion__elementos{
+    justify-content: start;
+    gap: 5rem;
+    padding-bottom: 10rem;
+}
 
-.header__icono h3{
-    font-size: 2rem;
-    margin-left: 1rem;
-    color: black;
-    
+.headerTodosProductos{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tituloTodosProductos{
+    margin-bottom: 5rem;
 }
 
 
-
-/* ESTILOS PARA LA SECCION PRINCIPAL */
-
-.main__titulo{
-    margin-bottom: 6rem;
-    margin-top: 5rem;
-}
-
-
-.seccion__productos{
-
-    width: 90%;
+.organizarTodosProductos{
     display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 0px !important;
+    width: 100%;
+    height: 90%;
     margin: 0 auto;
+    grid-template-columns: 45% 45%;
     column-gap: 10%;
 
+    
 }
 
-.seccion__productos div:nth-child(5) {
+
+.organizarTodosProductos div{
     display: flex;
-
-}
-
-.seccion__productos div:nth-child(6) {
-    display: flex;
-
-}
-
-
-main{
-    margin-bottom: 75rem;
+    flex-direction: column;
+    margin-bottom: 5rem;
 }
 
 
 
+.organizarTodosProductos div img{
+    border-radius: 1rem;
+    animation: animacionImagenes;
+    animation-duration: 1.5s;
 
-/* RESPONSIVE PARA TABLET */
+    height: 15rem;
+    
+
+
+   
+}
+
+@keyframes animacionImagenes {
+
+    0%{transform: scale(0);}
+    
+}
+
+
+.footer_opciones{
+    list-style: none;
+}
 
 
 
-@media(min-width:768px){
 
-    .seccion__productos{
+@media (min-width:765px)  {
 
-        width: 90%;
+    .organizarTodosProductos{
         display: grid;
-        grid-template-columns: 20% 20% 20% 20%;
-        margin: 0px !important;
+        width: 100%;
+        height: 90%;
         margin: 0 auto;
-        column-gap: 10%;
-
+        grid-template-columns: 24% 24% 24% 24%;
+        column-gap: 1%;
     
-    
+        
     }
 
     main{
-        width: 80%;
-    }
-
-    main{
-        margin-bottom: 4rem;
-    }
-
-    .header__icono h3{
-        font-size: 2.5rem;
-    
+        margin: 0 auto;
+      
     }
     
-    
-    
-
 }
 
-/* RESPONSIVE PARA PC */
+@media (min-width:1025px)  {
 
-
-
-@media(min-width:1025px){
-
-    .seccion__productos{
-
-        
-        grid-template-columns: 16% 16% 16% 16% 16% 16%;
-        column-gap: 2.5%;
-    
-    }
-
-    main{
-        width: 90%;
+    .organizarTodosProductos{
+        display: grid;
+        width: 100%;
+        height: 90%;
         margin: 0 auto;
+        grid-template-columns: 15% 15% 15% 15% 15% 15% ;
+        column-gap: 1%;
+    
+        
     }
 
     main{
-        margin-bottom: 4rem;
-    }
-
-    .header__icono h3{
-        font-size: 2.7rem;
-    
+        margin: 0 auto;
+      
     }
     
-    
-    
-    
-
 }
