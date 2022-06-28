@@ -4,7 +4,7 @@ function crearProductoHTML(imagen, titulo, precio, contenedor) {
     <img src="${imagen}" alt="">
     <p class="producto__titulo">${titulo}</p>
     <p class="producto__precio">$${precio}</p>
-    <p class="producto__ver">Ver producto</p>
+
     </div>
     `;
 
@@ -29,7 +29,7 @@ function crearProductosHTMLADMIN2(id, imagen, titulo, precio, contenedor) {
       <img src="${imagen}" alt="">
       <p class="producto__titulo">${titulo}</p>
       <p class="producto__precio">$${precio}</p>
-      <p class="producto__ver">Ver producto</p>
+
 
      
 
