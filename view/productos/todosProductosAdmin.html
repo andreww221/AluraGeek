@@ -11,9 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/css/base/base.css" />
-    <link rel="stylesheet" href="../assets/css/pages/index.css" />
-    <link rel="stylesheet" href="../assets/css/pages/productos.css" />
+    <link rel="stylesheet" href="../../assets/css/base/base.css" />
+    <link rel="stylesheet" href="../../assets/css/pages/index.css" />
+    <link rel="stylesheet" href="../../assets/css/pages/productos.css" />
+    <link rel="stylesheet" href="../../assets/css/pages/productosAdmin.css" />
     <title>Document</title>
   </head>
   <body>
@@ -22,20 +23,20 @@
         <nav class="header__navegacion">
           <ul class="navegacion__elementos">
             <li >
-              <a class="header__icono" href="../index.html">
-                <img src="../assets/img/vectorControl.svg" alt="" />
+              <a class="header__icono" href="../../index.html">
+                <img src="../../assets/img/vectorControl.svg" alt="" />
               <h3>AluraGeek</h3>
               </a>
             </li>
             <li>
               <img
                 class="iconoBuscar iconoTablet"
-                src="assets/img/vectorLupa.svg"
+                src="../../assets/img/vectorLupa.svg"
                 alt=""
               />
             </li>
             <li>
-              <img src="../assets/img/vectorLupa.svg" alt="" />
+              <img src="../../assets/img/vectorLupa.svg" alt="" />
             </li>
           </ul>
         </nav>
@@ -45,10 +46,14 @@
       <main>
         <h2 class="main__titulo">Todos Los Productos</h2>
 
+        <a href="../productos/registrarProducto.html" class="boton_agregarProducto">Agregar Producto</a>
+
         <section class="seccionHeader">
        
   
-        <section class="seccion__productos todosproductos"></section>
+        <section class="seccion__productos productosAdmin"></section>
+
+  
 
         </section>
 
@@ -63,7 +68,7 @@
       <footer>
         <div class="footer_opciones">
           <li class="header__icono centrarIcono">
-            <img src="assets/img/vectorControl.svg" alt="" />
+            <img src="../../assets/img/vectorControl.svg" alt="" />
             <h3>AluraGeek</h3>
           </li>
 
@@ -78,6 +83,10 @@
         <section class="footer__formulario">
           <form action="">
             <h3 class="formulario__titulo">Hable con nosotros</h3>
+
+
+         
+
             <div class="layoutInput">
               <div>
                 <label for="">Nombre</label>
@@ -103,5 +112,12 @@
       </footer>
     </div>
   </body>
-  <script type="module" src="../controller/productosController.js"></script>
+ 
+
+  <script type="module" src="../../controller/productosController.js"></script>
 </html>
+
+
+
+
+

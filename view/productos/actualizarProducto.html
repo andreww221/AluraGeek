@@ -11,10 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/css/base/base.css" />
-    <link rel="stylesheet" href="../assets/css/pages/index.css" />
-    <link rel="stylesheet" href="../assets/css/pages/login.css" />
-    <link rel="stylesheet" href="../assets/css/pages/registrarProducto.css" />
+    <link rel="stylesheet" href="../../assets/css/base/base.css" />
+    <link rel="stylesheet" href="../../assets/css/pages/index.css" />
+    <link rel="stylesheet" href="../../assets/css/pages/login.css" />
+    <link rel="stylesheet" href="../../assets/css/pages/registrarProducto.css" />
     <title>Document</title>
   </head>
   <body>
@@ -23,8 +23,8 @@
         <nav class="header__navegacion">
           <ul class="navegacion__elementos">
             <li>
-             <a  class="header__icono" href="../index.html">
-              <img src="../assets/img/vectorControl.svg" alt="" />
+             <a  class="header__icono" href="../../index.html">
+              <img src="../../assets/img/vectorControl.svg" alt="" />
               <h3>AluraGeek</h3>
              </a>
             </li>
@@ -36,8 +36,8 @@
       </header>
 
       <main>
-        <form class="formularioLogin" action="" >
-            <h2>Agregar un nuevo producto</h2>
+        <form class="formularioLogin formularioActualizarProducto" action="" >
+            <h2>Actualizar Producto</h2>
 
             <div class="layoutInput">
                 <div>
@@ -71,7 +71,7 @@
                 </div>  
             
           
-                <input  class="boton__formulario botonWidth botonRegistrarProducto" type="submit" value="Registrar Producto" data-botonRegistrar>
+                <input  class="boton__formulario botonWidth botonActualizar" type="submit" value="Actualizar Producto" data-botonRegistrar>
                
                 
            
@@ -84,7 +84,19 @@
    
     </div>
   </body>
-<script type="module" src="../controller/productosController.js"></script>
 
-<!-- <script src="../prueba.js"></script> -->
+  <script>
+
+    let botonActualizar = document.querySelector(".botonActualizar");
+    var queryString = window.location.search;
+    var urlParams = new URLSearchParams(queryString);
+    var anuncioParam = urlParams.get("id");
+
+    botonActualizar.id=anuncioParam;
+
+  </script>
+
+<script type="module" src="../../controller/productosController.js"></script>
+
+
 </html>
